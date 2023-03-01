@@ -1,0 +1,649 @@
+html,
+body,
+body div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+figure,
+footer,
+header,
+menu,
+nav,
+section,
+time,
+mark,
+audio,
+video,
+details,
+summary {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+article,
+aside,
+figure,
+footer,
+header,
+nav,
+section,
+details,
+summary {
+  display: block;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+img,
+object,
+embed {
+  max-width: 100%;
+}
+
+/* force a vertical scrollbar to prevent a jumpy page */
+html {
+  overflow-y: scroll;
+}
+
+/* we use a lot of ULs that aren't bulleted.
+	don't forget to restore the bullets within content. */
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title],
+dfn[title] {
+  border-bottom: 1px dotted #000;
+  cursor: help;
+}
+
+/* tables still need cellspacing="0" in the markup */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+th {
+  font-weight: bold;
+  vertical-align: bottom;
+}
+
+td {
+  font-weight: normal;
+  vertical-align: top;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input,
+select {
+  vertical-align: middle;
+}
+
+pre {
+  white-space: pre;
+  /* CSS2 */
+  white-space: pre-wrap;
+  /* CSS 2.1 */
+  white-space: pre-line;
+  /* CSS 3 (and 2.1 as well, actually) */
+  word-wrap: break-word;
+  /* IE */
+}
+
+input[type="radio"] {
+  vertical-align: text-bottom;
+}
+
+input[type="checkbox"] {
+  vertical-align: bottom;
+}
+
+.ie7 input[type="checkbox"] {
+  vertical-align: baseline;
+}
+
+.ie6 input {
+  vertical-align: text-bottom;
+}
+
+select,
+input,
+textarea {
+  font: 99% sans-serif;
+}
+
+table {
+  font-size: inherit;
+  font: 100%;
+}
+
+small {
+  font-size: 85%;
+}
+
+strong {
+  font-weight: bold;
+}
+
+td,
+td img {
+  vertical-align: top;
+}
+
+/* Make sure sup and sub don't mess with your line-heights https://gist.github.com/413930 */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+/* standardize any monospaced elements */
+pre,
+code,
+kbd,
+samp {
+  font-family: monospace, sans-serif;
+}
+
+/* hand cursor on clickable elements */
+.clickable,
+label,
+input[type="button"],
+input[type="submit"],
+input[type="file"],
+button {
+  cursor: pointer;
+}
+
+/* Webkit browsers add a 2px margin outside the chrome of form elements */
+button,
+input,
+select,
+textarea {
+  margin: 0;
+}
+
+/* make buttons play nice in IE */
+button,
+input[type="button"] {
+  width: auto;
+  overflow: visible;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #333333;
+}
+
+ul,
+li {
+  display: block;
+}
+
+.container {
+  max-width: 450px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+button:active,
+:focus,
+:hover {
+  border: none;
+  border-color: transparent;
+}
+
+a,
+button {
+  transition: all 0.3s ease;
+  color: #000000;
+}
+
+a,
+a:hover,
+a:active,
+a:focus,
+button,
+button:hover,
+button:active,
+button:focus {
+  text-decoration: none;
+  outline: none;
+  cursor: pointer;
+}
+
+button {
+  display: block;
+  background-color: transparent;
+  border: none;
+  text-align: center;
+  padding: 0;
+}
+
+input,
+textarea {
+  display: block;
+  outline: none;
+  transition: all 0.3s ease;
+  padding: 0;
+  resize: none;
+}
+
+img {
+  object-fit: cover;
+}
+
+.profile {
+  padding-top: 14px;
+}
+
+.profile__wrapper {
+  display: flex;
+}
+
+.profile__pic {
+  max-width: 124px;
+  width: 100%;
+  height: 124px;
+  position: relative;
+  z-index: 2;
+}
+
+.profile__pic img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.profile__info {
+  margin-top: 8px;
+  margin-left: 10px;
+  width: 100%;
+}
+
+.profile__position {
+  font-size: 12px;
+  line-height: 20px;
+  color: #808080;
+  margin: 5px 0;
+  display: block;
+}
+
+.profile__name {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  display: block;
+}
+
+.profile__status {
+  background: #fffbc8;
+  border: 1px solid #dadada;
+  border-radius: 0 5px 5px 0;
+  padding: 6px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  border-left: none;
+  position: relative;
+}
+
+.profile__status::before {
+  content: "";
+  position: absolute;
+  left: -70px;
+  top: -1px;
+  width: 25%;
+  height: 104%;
+  background: #fffbc8;
+  z-index: -1;
+  border: 1px solid #dadada;
+}
+
+.profile__status p {
+  max-width: 201px;
+  width: 100%;
+}
+
+.services {
+  padding-bottom: 18px;
+}
+
+.services__content {
+  max-width: 320px;
+  width: 100%;
+  margin-left: auto;
+}
+
+.services__title {
+  font-size: 13px;
+  line-height: 15px;
+  text-align: right;
+  padding-right: 25px;
+  font-weight: 400;
+}
+
+.services__main {
+  border-top: 1px solid #dadada;
+  border-bottom: 1px solid #dadada;
+  padding: 16px 0;
+  margin: 8px 0;
+}
+
+.services__inner {
+  border-left: 1px solid rgba(51, 51, 51, 0.2);
+  padding-right: 40px;
+  padding-left: 6px;
+}
+
+.services__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2px;
+}
+
+.services__row:last-child {
+  margin-bottom: 0;
+}
+
+.services__name {
+  font-size: 13px;
+  line-height: 26px;
+  position: relative;
+}
+
+.services__name::before {
+  content: "";
+  position: absolute;
+  left: -6px;
+  top: 0;
+  height: 100%;
+  border-radius: 0px 3px 3px 0px;
+  z-index: -1;
+}
+
+.services__name_booking::before {
+  width: 220px;
+  background: #b1e19b;
+}
+
+.services__name_package::before {
+  width: 54px;
+  background: #ace2f8;
+}
+
+.services__name_hotels::before {
+  width: 36px;
+  background: #ace2f8;
+}
+
+.services__number {
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 15px;
+}
+
+.services__total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 40px;
+}
+
+.services__total span {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.reviews__info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.reviews__block {
+  display: flex;
+  align-items: center;
+}
+
+.reviews__block a {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  text-decoration-line: underline;
+  color: #005da1;
+}
+
+.reviews__latest {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  display: block;
+  margin-right: 8px;
+}
+
+.reviews__likes, .reviews__comments {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.reviews__likes svg, .reviews__comments svg {
+  margin-right: 4px;
+}
+
+.reviews__likes {
+  margin-right: 18px;
+}
+
+.reviews__wrapper {
+  margin-top: 12px;
+  padding-bottom: 22px;
+}
+
+.reviews__comment {
+  margin-bottom: 17px;
+}
+
+.reviews__comment:last-child {
+  margin-bottom: 0;
+}
+
+.reviews__comment_top {
+  display: flex;
+  align-items: center;
+}
+
+.reviews__comment_name {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19px;
+  margin-right: 8px;
+}
+
+.reviews__comment_date {
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 19px;
+  color: #808080;
+}
+
+.reviews__comment_text {
+  background: #f2fbff;
+  border: 1px solid #c4cbcf;
+  box-shadow: 0px 4px 10px rgba(128, 128, 128, 0.1);
+  padding: 11px 20px;
+  position: relative;
+  margin-top: 12px;
+}
+
+.reviews__comment_text svg {
+  position: absolute;
+  left: 23px;
+  top: -10.5px;
+  z-index: 1;
+}
+
+.reviews__form {
+  background: #f2f2f2;
+  padding: 30px 0;
+}
+
+.reviews__form form textarea {
+  margin: 0 auto;
+  max-width: 447px;
+  width: 100%;
+  height: 63px;
+  background: #ffffff;
+  border: 1px solid #000000;
+  border-radius: 1px;
+  padding: 10px;
+}
+
+.reviews__form form textarea.error {
+  border: 1px solid red;
+}
+
+.reviews__form form button {
+  background: #fdd639;
+  border-radius: 23px;
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #333333;
+  max-width: 281px;
+  height: 43px;
+  width: 100%;
+  margin: 23px auto 0;
+}
+
+@media screen and (max-width: 489px) {
+  .container {
+    max-width: 95%;
+  }
+  .profile__status::before {
+    width: 40%;
+  }
+  .services {
+    padding-top: 18px;
+  }
+}
+/*# sourceMappingURL=main.css.map */

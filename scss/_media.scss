@@ -1,0 +1,11 @@
+@media screen and (max-width: 489px) {
+  .container {
+    max-width: 95%;
+  }
+  .profile__status::before {
+    width: 40%;
+  }
+  .services{
+    padding-top: 18px;
+  }
+}

@@ -1,0 +1,297 @@
+// profile
+.profile {
+  padding-top: 14px;
+  &__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  &__pic {
+    max-width: 124px;
+    width: 100%;
+    height: 124px;
+    position: relative;
+    z-index: 2;
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+    }
+  }
+  &__info {
+    margin-top: 8px;
+    margin-left: 10px;
+    width: 100%;
+  }
+  &__position {
+    font-size: 12px;
+    line-height: 20px;
+    color: #808080;
+    margin: 5px 0;
+    display: block;
+  }
+  &__name {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    display: block;
+  }
+  &__status {
+    background: #fffbc8;
+    border: 1px solid #dadada;
+    border-radius: 0 5px 5px 0;
+    padding: 6px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    border-left: none;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      left: -70px;
+      top: -1px;
+      width: 25%;
+      height: 104%;
+      background: #fffbc8;
+      z-index: -1;
+      border: 1px solid #dadada;
+    }
+    p {
+      max-width: 201px;
+      width: 100%;
+    }
+  }
+}
+// services
+.services {
+  padding-bottom: 18px;
+  &__content {
+    max-width: 320px;
+    width: 100%;
+    margin-left: auto;
+  }
+  &__title {
+    font-size: 13px;
+    line-height: 15px;
+    text-align: right;
+    padding-right: 25px;
+    font-weight: 400;
+  }
+  &__main {
+    border-top: 1px solid #dadada;
+    border-bottom: 1px solid #dadada;
+    padding: 16px 0;
+    margin: 8px 0;
+  }
+  &__inner {
+    border-left: 1px solid rgba(51, 51, 51, 0.2);
+    padding-right: 40px;
+    padding-left: 6px;
+  }
+  &__row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 2px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  &__name {
+    font-size: 13px;
+    line-height: 26px;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      left: -6px;
+      top: 0;
+      height: 100%;
+      border-radius: 0px 3px 3px 0px;
+      z-index: -1;
+    }
+    &_booking::before {
+      width: 220px;
+      background: #b1e19b;
+    }
+    &_package::before {
+      width: 54px;
+      background: #ace2f8;
+    }
+    &_hotels::before {
+      width: 36px;
+      background: #ace2f8;
+    }
+  }
+  &__number {
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 15px;
+  }
+  &__total {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-right: 40px;
+    span {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 26px;
+    }
+  }
+}
+// reviews
+.reviews {
+  &__info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  &__block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    a {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 16px;
+      -webkit-text-decoration-line: underline;
+      text-decoration-line: underline;
+      color: #005da1;
+    }
+  }
+  &__latest {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 16px;
+    display: block;
+    margin-right: 8px;
+  }
+  &__likes,
+  &__comments {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: 12px;
+    line-height: 14px;
+    svg {
+      margin-right: 4px;
+    }
+  }
+  &__likes {
+    margin-right: 18px;
+  }
+  &__wrapper {
+    margin-top: 12px;
+    padding-bottom: 22px;
+  }
+  &__comment {
+    margin-bottom: 17px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    &_top {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+    }
+    &_name {
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 19px;
+      margin-right: 8px;
+    }
+    &_date {
+      font-weight: 400;
+      font-size: 11px;
+      line-height: 19px;
+      color: #808080;
+    }
+    &_text {
+      background: #f2fbff;
+      border: 1px solid #c4cbcf;
+      -webkit-box-shadow: 0px 4px 10px rgba(128, 128, 128, 0.1);
+      box-shadow: 0px 4px 10px rgba(128, 128, 128, 0.1);
+      padding: 11px 20px;
+      position: relative;
+      margin-top: 12px;
+      svg {
+        position: absolute;
+        left: 23px;
+        top: -10.5px;
+        z-index: 1;
+      }
+    }
+  }
+  &__form {
+    background: #f2f2f2;
+    padding: 30px 0;
+    form {
+      textarea {
+        margin: 0 auto;
+        max-width: 447px;
+        width: 100%;
+        height: 63px;
+        background: #ffffff;
+        border: 1px solid #000000;
+        border-radius: 1px;
+        padding: 10px;
+        &.error {
+          border: 1px solid red;
+        }
+      }
+      button {
+        background: #fdd639;
+        border-radius: 23px;
+        font-family: "PT Sans";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 21px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        text-align: center;
+        color: #333333;
+        max-width: 281px;
+        height: 43px;
+        width: 100%;
+        margin: 23px auto 0;
+      }
+    }
+  }
+}
